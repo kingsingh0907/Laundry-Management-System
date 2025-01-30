@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.add-cloth{
+    margin-top: 2rem;
+}
+
+.add-cloth-btn {
+    display: block;
+    background-color: #009879;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    margin: 0rem auto 2rem;
+    line-height: 20px;
+    outline: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+}
+
+
+.add-cloth-btn:hover,
+.add-cloth-btn:focus {
+    background-color: #006e58;
+    cursor: pointer;
+}
+
+.addClothes-modal-parent {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(177, 177, 177, 0.637);
+    box-shadow: 5px 10px;
+    border: 2px solid black;
+}
+
+.addClothes-modal-child {
+    position: fixed;
+    max-width: 40rem;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    top: 50%;
+    left: 50%;
+    border: 2px solid black;
+    transform: translate(-50%, -50%);
+
+}
+
+.addClothes-modal-heading {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Table Formation */
+
+.addClothes-styled-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 0.4rem 0.4rem 0 0;
+    overflow: hidden;
+}
+
+.addClothes-styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+}
+
+.addClothes-styled-table th,
+.addClothes-styled-table td {
+    padding: 6px 7px;
+    text-align: center;
+}
+
+
+.addClothes-styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.addClothes-styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.addClothes-styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+
+.addClothes-styled-table input {
+    width: 3rem;
+    border: none;
+    border-bottom: 1px solid #999;
+    text-align:center;
+
+}
+.addClothes-styled-table input::placeholder {
+    text-align: center;
+}
+.addClothes-styled-table input:focus::placeholder {
+    color: transparent;
+}
+
+
+
+/* CSS Button*/
+
+.addClothes-upload-btn {
+    background-color: #009879;
+    border-radius: 8px;
+    border-style: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    margin: 1rem 0;
+    line-height: 20px;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    margin-right: 1rem;
+}
+
+.addClothes-upload-btn:hover,
+.addClothes-upload-btn:focus {
+    background-color: #016e59;
+}
+
+.addClothes-close-btn {
+    background-color: #f25757;
+    border-radius: 8px;
+    border-style: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    margin: 1rem 0;
+    line-height: 20px;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    margin-right: 1rem;
+}
+
+.addClothes-close-btn:hover,
+.addClothes-close-btn:focus {
+    background-color: #c82222;
+}
+
+
+@media screen and (max-width: 600px) {
+    .addClothes-modal-child {
+        width: 100%;
+        bottom: 0;
+    }
+}

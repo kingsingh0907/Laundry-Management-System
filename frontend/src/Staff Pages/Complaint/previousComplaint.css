@@ -1,0 +1,36 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5rem;
+    row-gap: 4rem;
+}
+
+.card-container {
+    justify-self: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgb(229, 240, 250);
+    padding: 1rem;
+    width: 25rem;
+    height: fit-content;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-container:hover{
+    transform: translate(-2px,-2px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin: 5px;
+}
+
+@media (max-width:992px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+    .card-container{
+        width: 20rem;
+    }
+}

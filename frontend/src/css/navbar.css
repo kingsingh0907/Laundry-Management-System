@@ -1,0 +1,156 @@
+.navbar-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    background-color: #009879;
+    width: 100%;
+}
+
+.nav-items {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.navbar-container .nav-item {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;  
+    padding: 1rem 2rem;  
+    list-style: none;
+    width: 15rem;
+    cursor: pointer;
+    color: black;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    filter: invert(1);
+    font-weight: 600;
+}
+
+.navbar-container .nav-item img {
+    width: 20px;
+}
+
+.nav-item:hover {
+    filter: invert(0);
+
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+
+}
+
+.navbar-container img:hover {
+    cursor: pointer;
+}
+
+/* Hamburger CSS */
+
+.hamburger-button {
+    display: none;
+    position: fixed;
+    height: 0.5rem;
+    width: 4rem;
+    background-color: #65cfb4;
+    align-self: center;
+    margin: 1rem 0 3rem 0;
+    border-radius: 100px;
+}
+
+.hamburger-button::before {
+    content: "";
+    position: absolute;
+    height: 0.5rem;
+    width: 4rem;
+    background-color: #65cfb4;
+    top: -10px;
+    left: 0px;
+}
+
+.hamburger-button::after {
+    content: "";
+    position: absolute;
+    height: 0.5rem;
+    width: 4rem;
+    background-color: #65cfb4;
+    top: 10px;
+    left: 0px;
+}
+
+@media (max-width: 1000px) {
+    .hamburger-button {
+        display: inline-block;
+    }
+
+    .navbar-container {
+        display: none;
+    }
+
+    .sidemenu {
+        display: flex;
+        /* Show the side menu */
+    }
+
+    .contact-body {
+        margin: 0;
+        /* Adjust margin for the contact body */
+    }
+}
+
+.sidemenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10rem;
+    background-color: #009879;
+    width: 9rem;
+    margin-top: 1.5rem;
+    height: 100vh;
+    z-index: 10000;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-around; */
+    gap: 1rem;
+    margin-top: 1rem;
+    z-index: 10000;
+}
+
+.sidemenu .nav-item {
+    display: flex;
+    gap: 0.2rem;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    width: 9.1rem;
+    cursor: pointer;
+    color: black;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    filter: invert(1);
+    font-weight: 600;
+}
+
+.sidemenu .nav-item img {
+    width: 20px;
+}
+
+.nav-item.hover,
+.nav-item.active {
+    filter: invert(0);
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+
+}
+
+.sidemenu img:hover {
+    cursor: pointer;
+}

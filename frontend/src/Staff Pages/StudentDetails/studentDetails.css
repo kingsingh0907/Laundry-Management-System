@@ -1,0 +1,63 @@
+.user-profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.user-profile span {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.user-profile span:hover {
+    background-color: #dedede;
+}
+
+.user-profile span::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23333' d='M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32zm0 96c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 256H144c-8.8 0-16-7.2-16-16 0-52.9 43.1-96 96-96h64c52.9 0 96 43.1 96 96 0 8.8-7.2 16-16 16z'/%3E%3C/svg%3E");
+}
+
+.user-profile span:nth-child(2)::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23333' d='M502.3 190.8l-74.5-74.5c-3.1-3.1-8.2-3.1-11.3 0L310.3 222.2c-1.6 1.6-2.3 3.6-2.3 5.7v19.6c0 4.4 3.6 8 8 8h19.6c2.1 0 4.1-.7 5.7-2.3l105.9-105.9c3.1-3.2 3.1-8.2 0-11.3zM256 272c-8.8 0-16 7.2-16 16v176H48V48h176c8.8 0 16-7.2 16-16S232.8 16 224 16H32C14.3 16 0 30.3 0 48v352c0 17.7 14.3 32 32 32h224c17.7 0 32-14.3 32-32V288c0-8.8-7.2-16-16-16z'/%3E%3C/svg%3E");
+}
+
+.user-profile span:nth-child(3)::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23333' d='M436.992 74.953H75.008C51.62 74.953 32 94.573 32 117.96v276.08c0 23.387 19.62 42.007 43.008 42.007h361.984c23.388 0 42.008-19.62 42.008-42.007V117.96c0-23.387-19.62-42.007-43.008-42.007zM112 416H80V192h32v224zm64 0H144V192h32v224zm64 0H208V192h32v224zm64 0H272V192h32v224zm64 0H336V192h32v224zm64 0H400V192h32v224z'/%3E%3C/svg%3E");
+}
+
+.distribute-btn{
+    display: block;
+    background-color: #009398;
+    border-radius: 5px;
+    border-style: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    margin: 0rem auto ;
+    line-height: 20px;
+    outline: none;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+}
+
+.distribute-btn:hover{
+    background-color: #007f84;
+    cursor: pointer;
+}

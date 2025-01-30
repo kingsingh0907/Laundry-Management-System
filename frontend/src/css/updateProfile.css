@@ -1,0 +1,85 @@
+.update-imageBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(0, 0, 0, 0.644);
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.update-imageBtn:hover{
+    background-color: rgba(36, 35, 35, 0.36);
+    color: white;
+}
+
+.up-UploadButton{
+    margin-top: 10px;
+}
+
+
+.modal-parent {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(209, 218, 226, 0.564);
+    box-shadow: 5px 10px;
+}
+
+.modal-child {
+    position: fixed;
+    max-width: fit-content;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.modal-heading{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* CSS Button*/
+
+.modal-close-btn {
+    background-color: #160f11;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    margin: 1rem 0;
+    line-height: 20px;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: #403e3f;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .modal-child{
+        width: 100%;
+        bottom: 0;
+    }
+}

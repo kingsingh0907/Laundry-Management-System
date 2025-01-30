@@ -1,0 +1,92 @@
+.staff-dashboard {
+    text-align: center;
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.staff-dashboard h2 {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.staff-dashboard-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.staff-dashboard .user-input {
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.staff-dashboard .user-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.staff-dashboard .user-card {
+    justify-self: center;
+    border: 2px solid #959595;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 15rem;
+}
+
+.staff-dashboard h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.staff-dashboard p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.details-btn {
+    display: block;
+    background-color: #009879;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    margin: 0rem auto 0rem;
+    line-height: 20px;
+    outline: none;
+    padding:8px 14px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+}
+
+.details-btn:hover,
+.details-btn:focus {
+    background-color: #006e58;
+    cursor: pointer;
+}
+
+@media (max-width:992px) {
+    .staff-dashboard .user-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width:762px) {
+    .staff-dashboard .user-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:576px) {
+    .staff-dashboard .user-cards {
+        grid-template-columns: 1fr;
+    }
+}

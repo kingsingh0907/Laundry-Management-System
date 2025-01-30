@@ -1,0 +1,28 @@
+.logout-body {
+    margin: 0 0 0 15rem;
+    padding: 0;
+    height: 100vh;
+    background-color: #cdfff3;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog{
+    margin: auto;
+    background-color: white;
+    padding: 1rem;
+}
+
+.wwe::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+padding: 5rem;
+  }
